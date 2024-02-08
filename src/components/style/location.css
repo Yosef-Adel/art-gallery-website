@@ -90,7 +90,8 @@
         display: flex;
         flex-direction: column;
     }
-    .locationSection .row__2 .col__1, 
+
+    .locationSection .row__2 .col__1,
     .locationSection .row__2 .col__2 {
         width: 100%;
         margin-bottom: 6rem;
