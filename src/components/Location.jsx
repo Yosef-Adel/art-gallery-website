@@ -31,7 +31,7 @@ const Location = () => {
     return (
         <div className='locationSection'>
             <div className='row row__1'>
-                <img src={locationImg} alt='location' />
+                <img src={imgs} alt='location' />
                 <Link to="/" className='btn text text--M '>
                     <span className='arrow'>
                         <img src={arrow} alt='arrow' />
