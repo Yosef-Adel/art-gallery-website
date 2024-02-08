@@ -1,8 +1,29 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './style/hero.css';
 import img from '../assets/desktop/image-hero@2x.jpg';
+import img1 from '../assets/tablet/image-hero@2x.jpg';
+import img2 from '../assets/mobile/image-hero@2x.jpg';
 import arrow from '../assets/icon-arrow-right.svg';
 const Hero = () => {
+    const [imgs, setImgs] = useState(img);
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            if (window.innerWidth <= 768) {
+                setImgs(img1);
+            } else if (window.innerWidth <= 375) {
+                setImgs(img2);
+            } else {
+                setImgs(img);
+            }
+        };
+        handleWindowResize();
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, [])
     return (
         <div className='hero'>
             <div className='hero__content'>
@@ -14,7 +35,7 @@ const Hero = () => {
                     </h1>
                 </div>
                 <div className='col__2'>
-                    <img src={img} alt='Modern Art Gallery' />
+                    <img src={imgs} alt='Modern Art Gallery' />
                 </div>
                 <div className='col__3'>
                     <h1 className='heading--XL heading'>

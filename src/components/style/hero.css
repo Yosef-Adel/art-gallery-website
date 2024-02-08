@@ -1,45 +1,45 @@
-.hero__content {
-    height: 90rem;
+.hero .hero__content {
+    min-height: 90rem;
     display: grid;
     grid-template-columns: minmax(200px, 5fr) minmax(350px, 6fr) minmax(200px, 5fr);
 }
 
-.col__1 {
+.hero .col__1 {
     padding-left: 16.5rem;
     padding-top: 20rem;
 }
 
-.col__1 {
+.hero .col__1 {
     background: var(--color-tertiary);
     color: var(--color-primary);
 }
 
-.col__1 .heading {
+.hero .col__1 .heading {
     text-wrap: nowrap;
     mix-blend-mode: exclusion;
 }
 
-.col__2 img {
+.hero .col__2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.col__3 {
+.hero .col__3 {
     padding-right: 16.5rem;
     padding-top: 20rem;
 }
 
-.col__3 .heading {
+.hero .col__3 .heading {
     display: none;
 }
 
-.col__3 .text {
+.hero .col__3 .text {
     transform: translateX(-15%);
     color: var(--color-secondary);
 }
 
-.col__3 .btn {
+.hero .col__3 .btn {
     height: 7.2rem;
     width: 26rem;
     margin-top: 4rem;
@@ -54,75 +54,75 @@
     transition: background 0.5s ease;
 }
 
-.col__3 .btn span {
+.hero .col__3 .btn span {
     padding: 0 2rem;
 }
 
-.col__3 .btn .arrow {
+.hero .col__3 .btn .arrow {
     height: 100%;
     width: 5.6rem;
     background: var(--color-quaternary);
     transition: background 0.5s ease;
 }
 
-.col__3 .btn .arrow img {
+.hero .col__3 .btn .arrow img {
     height: 50%;
     margin: auto;
     margin-top: 1.8rem;
 }
 
-.col__3 .btn:hover {
+.hero .col__3 .btn:hover {
     background: var(--color-quaternary);
 }
 
-.col__3 .btn:hover .arrow {
+.hero .col__3 .btn:hover .arrow {
     background: var(--color-tertiary);
 }
 
 @media screen and (max-width: 1150px) {
-    .col__1 {
+    .hero .col__1 {
         padding-left: 10rem;
     }
 
-    .col__3 {
+    .hero .col__3 {
         padding-right: 10rem;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .col__1 {
+    .hero .col__1 {
         padding-left: 3rem;
     }
 
-    .col__3 {
+    .hero .col__3 {
         padding-right: 3rem;
     }
 
-    .col__3 .btn {
+    .hero .col__3 .btn {
         width: 20rem;
         font-size: 1.6rem;
     }
 
-    .col__3 .btn span {
+    .hero .col__3 .btn span {
         text-align: center;
         padding: 0 1.5rem;
     }
 
-    .col__3 .btn .arrow {
+    .hero .col__3 .btn .arrow {
         width: 4.5rem;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .hero__content {
+    .hero .hero__content {
         grid-template-columns: minmax(35rem, 6fr) minmax(20rem, 5fr);
     }
 
-    .col__1 {
+    .hero .col__1 {
         display: none;
     }
 
-    .col__3 .heading {
+    .hero .col__3 .heading {
         display: block;
         transform: translateX(-25%);
         color: var(--color-tertiary);
@@ -130,38 +130,44 @@
         margin-bottom: 4rem;
     }
 
-    .col__3 .text {
+    .hero .col__3 .text {
         transform: translateX(-25%);
     }
 }
 
 @media screen and (max-width: 400px) {
-    .hero__content {
+    .hero .hero__content {
         grid-template-columns: 1fr;
     }
-    .col__2 img {
+
+    .hero .col__2 img {
         height: 60rem;
     }
-    .col__3 .heading,
-    .col__3 .text {
+
+    .hero .col__3 .heading,
+    .hero .col__3 .text {
         transform: translateX(0%);
     }
-    .col__3 {
+
+    .hero .col__3 {
         padding: 4rem;
     }
-    .col__3 .btn {
+
+    .hero .col__3 .btn {
         height: 10rem;
         width: 36rem;
         font-size: 3.2rem;
     }
 
-    .col__3 .btn span {
+    .hero .col__3 .btn span {
         padding: 0 2.5rem;
     }
-    .col__3 .btn .arrow {
+
+    .hero .col__3 .btn .arrow {
         width: 6rem;
     }
-    .col__3 .btn .arrow img {
+
+    .hero .col__3 .btn .arrow img {
         height: 50%;
         margin: auto;
         margin-top: 2.5rem;

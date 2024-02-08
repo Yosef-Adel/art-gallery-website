@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Outfit:wght@300;400;600&display=swap');
+
 :root {
     --color-primary: #FFF;
-    --color-secondary: #444;
+    --color-secondary: #000;
     --color-tertiary: #151515;
     --color-quaternary: #D5966C;
 }
@@ -76,18 +77,21 @@ html {
         font-size: 50%;
     }
 }
+
 @media screen and (max-width: 700px) {
     html {
         font-size: 40%;
     }
 }
+
 @media screen and (max-width: 600px) {
     html {
         font-size: 30%;
     }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 400px) {
     html {
-        font-size: 25%;
+        font-size: 35%;
     }
 }
