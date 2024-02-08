@@ -46,7 +46,7 @@
     background: var(--color-tertiary);
     border: none;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-primary);
     display: flex;
     align-items: center;
