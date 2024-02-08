@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import {Link } from 'react-router-dom';
 import './style/hero.css';
 import img from '../assets/desktop/image-hero@2x.jpg';
 import img1 from '../assets/tablet/image-hero@2x.jpg';
@@ -48,14 +49,14 @@ const Hero = () => {
                         from a spark of inspiration. Will these pieces inspire you? Visit
                         us and find out.
                     </p>
-                    <button className='btn text text--M '>
+                    <Link to="/location" className='btn text text--M '>
                         <span>
                             Our location
                         </span>
                         <span className='arrow'>
                             <img src={arrow} alt='arrow' />
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div >
